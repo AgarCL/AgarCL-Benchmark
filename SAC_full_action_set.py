@@ -464,7 +464,7 @@ def main():
             # log_interval=args.log_interval,
              train_max_episode_len=timestep_limit,
              eval_max_episode_len=timestep_limit,
-            case="continuing" if args.cont else "episodic",
+            case="continuing" if args.env else "episodic",
             step_offset=args.step_offset,
             # total_reward=args.total_reward,
             # env_checkpointable=True,

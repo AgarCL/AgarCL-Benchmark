@@ -402,7 +402,7 @@ def main():
             eval_env=eval_env,
             checkpoint_freq = 5000000,
             step_hooks=step_hooks,
-            case="continuing" if args.cont else "episodic",
+            case="continuing" if args.env else "episodic",
             step_offset=args.step_offset,
             env_checkpointable=True,
             buffer_checkpointable=True,

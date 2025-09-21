@@ -437,7 +437,7 @@ def main():
             train_max_episode_len=timestep_limit,
             eval_max_episode_len=timestep_limit,
             step_hooks=step_hooks,
-            case="continuing" if args.cont else "episodic",
+            case="continuing" if args.env else "episodic",
             step_offset=args.step_offset,
             total_reward_so_far=args.total_reward,
             episode_idx=args.episode_idx,
