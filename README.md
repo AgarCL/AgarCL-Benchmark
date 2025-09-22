@@ -19,7 +19,7 @@ Each mini-game has its own config `task_configs/mini_game_{i}.json`. Use the fol
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=1e-4 \
   --batch_accumulator="mean" \
   --tau=5e-5 \
@@ -29,7 +29,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --mini_game="task_configs/mini_game_1.json"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="min_max" \
   --lr=1e-4 \
   --epochs=15 \
@@ -40,7 +40,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --outdir="$RESULTS/PPO_mg1"\
   --mini_game="task_configs/mini_game_1.json"
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python SAC_full_action_set.py \
   --reward="min_max" \
   --lr=3e-5 \
   --soft-update-tau=0.001 \
@@ -58,7 +58,7 @@ python generate_bash.py SAC.sh SAC_full_action_set.py \
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py I am running a few minutes late; my previous meeting is running over.
+python DQN_full_action_set.py\
   --lr=3e-4 \
   --batch_accumulator="sum" \
   --tau=5e-5 \
@@ -68,7 +68,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py I am running a few minutes
    --mini_game="task_configs/mini_game_2.json"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="min_max" \
   --lr=1e-5 \
   --epochs=10 \
@@ -80,7 +80,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --mini_game="task_configs/mini_game_2.json"
 
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python  SAC_full_action_set.py \
   --reward="min_max" \
   --lr=3e-5 \
   --soft-update-tau=0.001 \
@@ -98,7 +98,7 @@ python generate_bash.py SAC.sh SAC_full_action_set.py \
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=1e-4 \
   --batch_accumulator="mean" \
   --tau=5e-5 \
@@ -107,7 +107,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --outdir="$RESULTS/DQN_mg3"\
   --mini_game="task_configs/mini_game_3.json"
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="min_max" \
   --lr=1e-5 \
   --epochs=10 \
@@ -118,7 +118,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --outdir="$RESULTS/PPO_mg3"\
   --mini_game="task_configs/mini_game_3.json"
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python SAC_full_action_set.py \
   --reward="min_max" \
   --lr=1e-4 \
   --soft-update-tau=0.01 \
@@ -136,7 +136,7 @@ python generate_bash.py SAC.sh SAC_full_action_set.py \
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=3e-4 \
   --batch_accumulator="sum" \
   --tau=1e-2 \
@@ -146,7 +146,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
    --mini_game="task_configs/mini_game_4.json"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="min_max" \
   --lr=1e-5 \
   --epochs=15 \
@@ -157,7 +157,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --outdir="$RESULTS/PPO_mg4"\
   --mini_game="task_configs/mini_game_4.json"
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python  SAC_full_action_set.py \
   --reward="min_max" \
   --lr=1e-5 \
   --soft-update-tau=0.001 \
@@ -175,7 +175,7 @@ python generate_bash.py SAC.sh SAC_full_action_set.py \
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=1e-5 \
   --batch_accumulator="mean" \
   --tau=1e-2 \
@@ -185,7 +185,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --mini_game="task_configs/mini_game_5.json"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="min_max" \
   --lr=1e-4 \
   --epochs=10 \
@@ -197,7 +197,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --mini_game="task_configs/mini_game_5.json"
 
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python  SAC_full_action_set.py \
   --reward="min_max" \
   --lr=1e-5 \
   --soft-update-tau=0.001 \
@@ -215,7 +215,7 @@ python generate_bash.py SAC.sh SAC_full_action_set.py \
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=1e-5 \
   --batch_accumulator="mean" \
   --tau=1e-2 \
@@ -225,7 +225,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --mini_game="task_configs/mini_game_6.json"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="min_max" \
   --lr=3e-5 \
   --epochs=10 \
@@ -237,7 +237,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --mini_game="task_configs/mini_game_6.json"
 
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python  SAC_full_action_set.py \
   --reward="min_max" \
   --lr=1e-4 \
   --soft-update-tau=0.001 \
@@ -259,7 +259,7 @@ Add `--env_type=1` to run the continual setting with mass difference as reward. 
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=1e-4 \
   --batch_accumulator="mean" \
   --tau=5e-5 \
@@ -270,7 +270,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --outdir="$RESULTS/DQN_cont_mg1"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="variance_norm" \
   --lr=1e-4 \
   --epochs=4 \
@@ -283,7 +283,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --outdir="$RESULTS/PPO_cont_mg1"
 
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python  SAC_full_action_set.py \
   --reward="variance_norm" \
   --lr=3e-5 \
   --soft-update-tau=0.001 \
@@ -302,7 +302,7 @@ python generate_bash.py SAC.sh SAC_full_action_set.py \
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=3e-4 \
   --batch_accumulator="sum" \
   --tau=1e-2 \
@@ -313,7 +313,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --outdir="$RESULTS/DQN_cont_mg2"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="variance_norm" \
   --lr=1e-5 \
   --epochs=10 \
@@ -326,7 +326,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --outdir="$RESULTS/PPO_cont_mg2"
 
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python  SAC_full_action_set.py \
   --reward="variance_norm" \
   --lr=3e-5 \
   --soft-update-tau=0.005 \
@@ -346,7 +346,7 @@ python generate_bash.py SAC.sh SAC_full_action_set.py \
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=1e-4 \
   --batch_accumulator="mean" \
   --tau=5e-5 \
@@ -357,7 +357,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --outdir="$RESULTS/DQN_cont_mg3"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="still_running" \
   --lr=1e-4 \
   --epochs=4 \
@@ -370,7 +370,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --outdir="$RESULTS/PPO_cont_mg3"
 
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python  SAC_full_action_set.py \
   --reward="variance_norm" \
   --lr=1e-4 \
   --soft-update-tau=0.01 \
@@ -389,7 +389,7 @@ python generate_bash.py SAC.sh SAC_full_action_set.py \
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=1e-4 \
   --batch_accumulator="sum" \
   --tau=5e-5 \
@@ -400,7 +400,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --outdir="$RESULTS/DQN_cont_mg4"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="variance_norm" \
   --lr=1e-5 \
   --epochs=10 \
@@ -413,7 +413,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --outdir="$RESULTS/PPO_cont_mg4"
 
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python  SAC_full_action_set.py \
   --reward="variance_norm" \
   --lr=1e-5 \
   --soft-update-tau=0.01 \
@@ -432,7 +432,7 @@ python generate_bash.py SAC.sh SAC_full_action_set.py \
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=1e-5 \
   --batch_accumulator="mean" \
   --tau=1e-2 \
@@ -443,7 +443,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --outdir="$RESULTS/DQN_cont_mg5"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="min_max" \
   --lr=3e-5 \
   --epochs=10 \
@@ -456,7 +456,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --outdir="$RESULTS/PPO_cont_mg5"
 
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python  SAC_full_action_set.py \
   --reward="variance_norm" \
   --lr=1e-5 \
   --soft-update-tau=0.001 \
@@ -475,7 +475,7 @@ python generate_bash.py SAC.sh SAC_full_action_set.py \
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=3e-4 \
   --batch_accumulator="mean" \
   --tau=1e-2 \
@@ -486,7 +486,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --outdir="$RESULTS/DQN_cont_mg6"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="min_max" \
   --lr=3e-5 \
   --epochs=10 \
@@ -499,7 +499,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --outdir="$RESULTS/PPO_cont_mg6"
 
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python  SAC_full_action_set.py \
   --reward="variance_norm" \
   --lr=3e-5 \
   --soft-update-tau=0.005 \
@@ -526,7 +526,7 @@ Run the best episodic hyperparameters on:
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=1e-5 \
   --batch_accumulator="mean" \
   --tau=5e-2 \
@@ -536,7 +536,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --outdir="$RESULTS/DQN_mode7"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="min_max" \
   --lr=3e-5 \
   --epochs=10 \
@@ -548,7 +548,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --outdir="$RESULTS/PPO_mode7"
 
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python  SAC_full_action_set.py \
   --reward="min_max" \
   --lr=1e-4 \
   --soft-update-tau=1e-2 \
@@ -566,7 +566,7 @@ python generate_bash.py SAC.sh SAC_full_action_set.py \
 
 ```bash
 # DQN
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=3e-4 \
   --batch_accumulator="mean" \
   --tau=1e-2 \
@@ -576,7 +576,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --outdir="$RESULTS/DQN_mode8"
 
 # PPO
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --reward="variance_norm" \
   --lr=1e-5 \
   --epochs=10 \
@@ -588,7 +588,7 @@ python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
   --outdir="$RESULTS/PPO_mode8"
 
 # SAC
-python generate_bash.py SAC.sh SAC_full_action_set.py \
+python  SAC_full_action_set.py \
   --reward="variance_norm" \
   --lr=1e-4 \
   --soft-update-tau=1e-2 \
@@ -606,7 +606,7 @@ python generate_bash.py SAC.sh SAC_full_action_set.py \
 Simply, you will use the hyperparameter of mini-game 1,2, and 3 in Mini-Game config 1: 
 
 ```bash
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=1e-4 \
   --batch_accumulator="mean" \
   --tau=5e-5 \
@@ -615,7 +615,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
   --outdir="$RESULTS/DQN_mg1" \
   --mini_game="task_configs/mini_game_1.json"
   
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
 --lr=3e-4 \
 --batch_accumulator="sum" \
 --tau=5e-5 \
@@ -624,7 +624,7 @@ python generate_bash.py DQN.sh DQN_full_action_set.py \
 --outdir="$RESULTS/DQN_mg1_hy2"
 --mini_game="task_configs/mini_game_1.json"
 
-python generate_bash.py DQN.sh DQN_full_action_set.py \
+python DQN_full_action_set.py \
   --lr=1e-4 \
   --batch_accumulator="mean" \
   --tau=5e-5 \
@@ -640,7 +640,7 @@ And so on.
 Use Mini-Game 4’s best hyperparameters on `full_game_config.json`:
 
 ```bash
-python generate_bash.py PPO.sh PPO_multi_heads_full_action.py \
+python PPO_multi_heads_full_action.py \
   --config=full_game_config.json \
   --reward="min_max" --lr=1e-5 --epochs=15 \
   --max-grad-norm=0.7 --entropy-coef=0.05 \
