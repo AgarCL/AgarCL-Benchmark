@@ -662,7 +662,6 @@ python PPO_multi_heads_full_action.py \
 * [x] One-to-one mapping: experiment ↔️ command
 * [x] All configs & scripts included
 * [x] Hyperparameters embedded directly in commands
-* [ ] Note unsupported items above
 
 ---
 
